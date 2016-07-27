@@ -20,16 +20,16 @@ const defaults = {
  * @param    {Object} [options={}]
  */
 const onPlayerReady = (player, options) => {
-	var containerElement = document.createElement("div");
+	let containerElement = document.createElement("div");
 	containerElement.className = "vjs-brand-container";
 
-	var linkElement = document.createElement("a");
+	let linkElement = document.createElement("a");
 	linkElement.className = "vjs-brand-container-link";
 	linkElement.setAttribute("href", options.destination || defaults.destination);
 	linkElement.setAttribute("title", options.title || defaults.title);
 	linkElement.setAttribute("target", options.destinationTarget || defaults.destinationTarget)
 
-	var imageElement = document.createElement("img");
+	let imageElement = document.createElement("img");
 	imageElement.src = options.image || defaults.image;
 
 	linkElement.appendChild(imageElement);
