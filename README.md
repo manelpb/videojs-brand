@@ -1,6 +1,6 @@
 # videojs-brand
 
-Simple plugin that adds your logo brand on the player controls
+Simple plugin that adds your logo brand in the player controls
 
 ![alt tag](https://raw.githubusercontent.com/manelpb/videojs-logo/master/screenshot.png)
 
