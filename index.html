@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>videojs-brand Demo</title>
+  <link href="/node_modules/video.js/dist/video-js.css" rel="stylesheet">
+  <link href="/dist/videojs-brand.css" rel="stylesheet">
+
+
+  <style>
+    .video-js {
+      width: 100%;
+      height: 450px;
+    }
+  </style>
+</head>
+<body>
+  <video id="videojs-brand-player" class="video-js vjs-default-skin" controls>
+    <source src="//vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+    <source src="//vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+  </video>
+  <ul>
+    <li><a href="/test/">Run unit tests in browser.</a></li>
+    
+  </ul>
+  <script src="/node_modules/video.js/dist/video.js"></script>
+  <script src="/dist/videojs-brand.js"></script>
+  <script>
+    (function(window, videojs) {
+      var player = window.player = videojs('videojs-brand-player');
+      player.brand({
+        image: "/logo-example.png",
+        title: "Logo Title",
+        destination: "http://www.google.com",
+        destinationTarget: "_top"
+      });
+    }(window, window.videojs));
+  </script>
+</body>
+</html>

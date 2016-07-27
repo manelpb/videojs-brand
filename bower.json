@@ -1,0 +1,14 @@
+{
+  "name": "videojs-brand",
+  "author": "Emmanuel Alves &lt;manel.pb@gmail.com&gt;",
+  "license": "MIT",
+  "main": [
+    "dist/videojs-brand.css",
+    "dist/videojs-brand.min.js"
+  ],
+  "keywords": [
+    "videojs",
+    "videojs-plugin"
+  ]
+}
+
