@@ -1,6 +1,6 @@
 {
   "name": "videojs-brand",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple plugin that adds your logo brand in the player controls",
   "main": "es5/plugin.js",
   "scripts": {
@@ -32,7 +32,7 @@
   },
   "repository" :
   { "type" : "git"
-  , "url" : "https://github.com/manelpb/videojs-logo.git"
+  , "url" : "https://github.com/manelpb/videojs-brand.git"
   },
   "keywords": [
     "videojs",
