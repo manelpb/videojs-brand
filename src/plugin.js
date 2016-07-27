@@ -2,8 +2,8 @@ import videojs from 'video.js';
 
 // Default options for the plugin.
 const defaults = {
-	image: "/logo-example.png",
-	title: "Logo Title",
+  image: "/logo-example.png",
+  title: "Logo Title",
   destination: "http://www.google.com",
   destinationTarget: "_blank"
 };
@@ -34,8 +34,6 @@ const onPlayerReady = (player, options) => {
 
 	linkElement.appendChild(imageElement);
 	containerElement.appendChild(linkElement);
-
-	console.log(player.controlBar.fullscreenToggle.el());
 
 	player.controlBar.el().insertBefore(containerElement, player.controlBar.fullscreenToggle.el());
   player.addClass('vjs-brand');

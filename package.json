@@ -1,6 +1,6 @@
 {
   "name": "videojs-brand",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple plugin that adds your logo brand in the player controls",
   "main": "es5/plugin.js",
   "scripts": {
