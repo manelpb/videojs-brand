@@ -30,7 +30,39 @@ This is the simplest case. Get the script in whatever way you prefer and include
     destinationTarget: "_top"
   });
 </script>
+
+or
+.
+.
+
+```html
+<script>
+  
+  import videojs from 'video.js';
+  import videojsBrand from 'videojs-brand'
+
+  export default {
+    name: "VideoPlayer",
+    data() {
+      return {
+        player: null
+      }
+    },
+    mounted() {
+      videojs.plugin('brand', videojsBrand)
+      this.player = videojs(this.$refs.videoPlayer, this.options, function onPlayerReady())
+      this.player.brand({
+        image: '/logo-example.png',
+        title: 'Logo Title',
+        destination: 'http://www.google.com',
+        destinationTarget: '_blank'
+      })
+    },
+  }
+</script>
+
 ```
+
 
 ## License
 
